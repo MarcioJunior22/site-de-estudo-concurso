@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
@@ -28,7 +28,7 @@ interface TopicWithMindMap {
   mindMapNodes: MindMapNode[];
 }
 
-export default function MapasMentaisPage() {
+function MapasMentaisContent() {
   const searchParams = useSearchParams();
   const cargoParam = searchParams.get("cargo");
   const topicParam = searchParams.get("topic");
@@ -201,5 +201,13 @@ export default function MapasMentaisPage() {
       </main>
       <Footer />
     </div>
+  );
+}
+
+export default function MapasMentaisPage() {
+  return (
+    <Suspense fallback={<div className="min-h-screen flex items-center justify-center">Carregando...</div>}>
+      <MapasMentaisContent />
+    </Suspense>
   );
 }
