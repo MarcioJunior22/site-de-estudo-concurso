@@ -900,7 +900,7 @@ HOMONÍMIA DE VERBOS: Mesmo verbo, sentidos diferentes, preposições diferentes
 
     stepByStep: [
       `PASSO 1 - OS 3 VERBOS TRAIÇOEIROS:
-
+      
       ASSISTIR:
       • "O público ASSISTIU O JOGO" (presenciar, ver = objeto direto, sem preposição)
       • "Assistir AO paciente" (ajudar = com preposição A)
@@ -1012,12 +1012,216 @@ Aversão A | Alusão A | Ânsia DE | Atração POR
 `
   },
 
-  // (Continuar com mais tópicos de Português Médio)
-  // TÓPICO 3: FIGURAS DE LINGUAGEM
-  // TÓPICO 4: INTERPRETAÇÃO
+  {
+    id: "pt-med-figuras",
+    title: "Figuras de Linguagem e Vícios de Linguagem",
+    subject: "Português",
+    level: "medio",
+    whatYouNeedToKnow:
+`Figuras de linguagem = recursos estilísticos que criam efeitos de sentido.
+METÁFORA, METONÍMIA, IRONIA = principais cobradas em prova.
+Vícios = erros de construção (pleonasmo vicioso, cacofonia, redundância).`,
 
-  // Por brevidade, adicionarei placeholder
-  // Em implementação real, cada um teria estrutura completa
+    whyItMatters:
+`Prova cobra identificar figuras e efeitos que criam.
+Redação pede evitar vícios (pleonasmo vicioso é erro comum).
+Interpretação: identificar figura = entender intenção do autor.`,
+
+    stepByStep: [
+      `PASSO 1 - METÁFORA:
+      Comparação implícita (SEM "como") por semelhança.
+      "Aquele gerente é um tubarão" (comparação por semelhança = sagacidade, competição)
+      "Aquele dia foi uma rocha" (pesado, imóvel)`,
+      
+      `PASSO 2 - METONÍMIA:
+      Substituição de termo por RELAÇÃO DE CONTIGUIDADE.
+      "Beba um copo de suco" (copo = quantidade/conteúdo, não recipiente)
+      "Li todo Machado" (Machado = obras de Machado de Assis)
+      "Aquele cara tem cabeça" (cabeça = inteligência)`,
+      
+      `PASSO 3 - IRONIA:
+      Dizer coisa com sentido OPOSTO do literal.
+      "Que inteligência!" (para alguém burro) = criticar
+      Sempre tem tom crítico/sarcástico`,
+      
+      `PASSO 4 - HIPÉRBOLE:
+      Exagero expressivo para reforçar ideia.
+      "Morri de medo" (não morreu, apenas muito assustado)
+      "Já disse isso mil vezes" (não foi exatamente mil)`,
+      
+      `PASSO 5 - VÍCIOS FREQUENTES:
+      • PLEONASMO VICIOSO: "Vi com meus próprios olhos" (redundância desnecessária)
+      • CACOFONIA: "A competência me compela" (som desagradável = culpa)
+      • AMBIGUIDADE: Múltiplos sentidos não intencional`
+    ],
+
+    visualGuide: `
+╔════════════════════════════════════════════════════════════════════╗
+║  FIGURAS: IDENTIFIQUE PELO EFEITO                                  ║
+╚════════════════════════════════════════════════════════════════════╝
+
+METÁFORA    | Comparação por semelhança (SEM "como")
+METONÍMIA   | Substituição por relação de proximidade
+IRONIA      | Sentido OPOSTO do literal (sarcasmo)
+HIPÉRBOLE   | EXAGERO expressivo
+EUFEMISMO   | Abrandar palavra forte
+ANTÍTESE    | Conceitos OPOSTOS lado-a-lado
+ALITERAÇÃO  | Repetição de SONS ("O rato roeu a roupa")
+
+╔════════════════════════════════════════════════════════════════════╗
+║  VÍCIOS: ERROS EM REDAÇÃO                                          ║
+╚════════════════════════════════════════════════════════════════════╝
+
+PLEONASMO VICIOSO | Redundância desnecessária
+CACOFONIA         | Som desagradável
+AMBIGUIDADE       | Múltiplos sentidos indesejado
+PROLIXIDADE       | Excesso de palavras
+`,
+
+    provenTricks: [
+      "🎯 TRUQUE 1 - METÁFORA: Procure 'é um/uma' sem 'como'",
+      "🎯 TRUQUE 2 - METONÍMIA: PARTE pelo TODO ou CAUSA pelo EFEITO",
+      "🎯 TRUQUE 3 - IRONIA: Sentido é SEMPRE OPOSTO do literal",
+      "🎯 TRUQUE 4 - VÍCIO: Redação = evitar pleonasmo vicioso e cacofonia"
+    ],
+
+    questionsResolved: [
+      {
+        number: 1,
+        text: `"Vi o filme com os meus próprios olhos."
+        Qual vício de linguagem?`,
+        options: ["Cacofonia", "Pleonasmo vicioso", "Ambiguidade"],
+        correctAnswer: "Pleonasmo vicioso",
+        whyCorrect: `"Próprios olhos" = redundância desnecessária (óbvio que são meus olhos se EU vi)
+        Pleonasmo vicioso = ERRO em redação ✓`,
+        strategy: "PLEONASMO VICIOSO: Redundância que não adiciona informação = vício."
+      }
+    ],
+
+    cheatSheet: `
+════════════════════════════════════════════════════════════════════
+FIGURAS & VÍCIOS
+════════════════════════════════════════════════════════════════════
+
+FIGURAS:
+METÁFORA (semelhança, sem "como")
+METONÍMIA (parte/todo, causa/efeito)
+IRONIA (sentido oposto)
+HIPÉRBOLE (exagero)
+
+VÍCIOS:
+PLEONASMO VICIOSO (redundância desnecessária) = ERRO
+CACOFONIA (som ruim) = ERRO
+AMBIGUIDADE (múltiplos sentidos) = ERRO
+
+════════════════════════════════════════════════════════════════════
+`
+  },
+
+  {
+    id: "pt-med-interpretacao",
+    title: "Compreensão e Interpretação de Textos",
+    subject: "Português",
+    level: "medio",
+    whatYouNeedToKnow:
+`Interpretação = extrair sentido EXPLÍCITO (literal) e IMPLÍCITO (entre linhas) do texto.
+Tema = assunto geral. Tese = posição defendida.
+Informação explícita = está escrito. Inferência = deduzir do texto.`,
+
+    whyItMatters:
+`Praticamente TODA prova tem questão de interpretação.
+Candidato que entende texto bem acerta 80%+ de todas as questões.
+Ler com atenção = ganhar tempo em toda prova.`,
+
+    stepByStep: [
+      `PASSO 1 - DIFERENÇA CRÍTICA:
+      INFORMAÇÃO EXPLÍCITA = está escrito no texto
+      INFERÊNCIA = deduzir usando pistas do texto (lógica + contexto)
+      
+      ERRADO: Extrapolar opinião pessoal (isso NÃO é inferência)
+      CERTO: Usar APENAS pistas textuais para deduzir`,
+      
+      `PASSO 2 - TEMA vs TESE:
+      TEMA = assunto geral ("sobre saúde")
+      TESE = posição defendida ("saúde pública é direito de todos")
+      
+      Um texto pode ter tema "política" mas tese "democracia falha"`,
+      
+      `PASSO 3 - LOCALIZAR INFORMAÇÃO:
+      1. Leia questão primeiro (sabe o que procura)
+      2. Procure palavra-chave do texto
+      3. Reread trecho com contexto (não só uma frase)
+      4. Confirme com alternativas`,
+      
+      `PASSO 4 - PRONOMES REFERENCIAIS:
+      "Ele", "Ela", "Isso", "Este" sempre retomam algo anterior
+      TESTE: Substitua pronome por termo = faz sentido?`,
+      
+      `PASSO 5 - INTENÇÃO DO AUTOR:
+      Procure pistas:
+      • Tom (formal/informal, crítico/neutro)
+      • Vocabulário escolhido
+      • Estrutura (cronológica, por argumento, etc)`
+    ],
+
+    visualGuide: `
+╔════════════════════════════════════════════════════════════════════╗
+║  LEITURA: PROCESSO EM 5 PASSOS                                     ║
+╚════════════════════════════════════════════════════════════════════╝
+
+1. LER QUESTÃO (sabe o que procura)
+2. LOCALIZAR TRECHO (procure palavra-chave)
+3. LER COM CONTEXTO (não só frase isolada)
+4. CONFIRMAR ALTERNATIVA (descarte outras com lógica)
+5. MARCAR RESPOSTA
+
+═══════════════════════════════════════════════════════════════════
+
+INFORMAÇÃO EXPLÍCITA: "O presidente chegou"
+INFERÊNCIA: "O presidente estava viajando" (deduz do contexto anterior)
+
+❌ ERRADO: Inferência que exige conhecimento externo do texto
+✓ CERTO: Inferência que usa APENAS pistas textuais
+`,
+
+    provenTricks: [
+      "🎯 TRUQUE 1 - LEIA QUESTÃO PRIMEIRO (sabe o que procura)",
+      "🎯 TRUQUE 2 - PROCURE PALAVRA-CHAVE (marca estratégias no texto)",
+      "🎯 TRUQUE 3 - LEIA COM CONTEXTO (não só uma frase = erro comum)",
+      "🎯 TRUQUE 4 - INFIRA COM PISTAS TEXTUAIS (não conhecimento externo)"
+    ],
+
+    questionsResolved: [
+      {
+        number: 1,
+        text: `"O economista alertou para os riscos. Ele afirmou que..."
+        A quem "Ele" se refere?`,
+        options: ["Ao presidente", "Ao economista"],
+        correctAnswer: "Ao economista",
+        whyCorrect: `"Ele" (masculino singular) retoma "economista" (MASCULINO SINGULAR)
+        Teste: "O economista afirmou" = faz sentido ✓`,
+        strategy: "REFERENCIAL: Veja número/gênero do pronome. Procure no texto quem combina."
+      }
+    ],
+
+    cheatSheet: `
+════════════════════════════════════════════════════════════════════
+INTERPRETAÇÃO - ROTEIRO PRÁTICO
+════════════════════════════════════════════════════════════════════
+
+LEIA QUESTÃO PRIMEIRO (sabe o que procura)
+LOCALIZE TRECHO (palavra-chave no texto)
+LER COM CONTEXTO (não frase isolada)
+CONFIRME ALTERNATIVA (compare com outras)
+
+INFORMAÇÃO EXPLÍCITA: Está escrito
+INFERÊNCIA: Deduz com pistas textuais (não conhecimento externo)
+
+TEMA = assunto | TESE = posição defendida
+
+════════════════════════════════════════════════════════════════════
+`
+  }
 ];
 
 // ====================================================================
