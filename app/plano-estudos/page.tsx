@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
@@ -40,7 +40,7 @@ export interface GeneratedStudyPlan {
   }[];
 }
 
-export default function PlanoEstudosPage() {
+function PlanoEstudosContent() {
   const searchParams = useSearchParams();
   const cargoParam = searchParams.get("cargo");
 
@@ -324,5 +324,13 @@ export default function PlanoEstudosPage() {
       </main>
       <Footer />
     </div>
+  );
+}
+
+export default function PlanoEstudosPage() {
+  return (
+    <Suspense fallback={<div className="min-h-screen flex items-center justify-center">Carregando...</div>}>
+      <PlanoEstudosContent />
+    </Suspense>
   );
 }

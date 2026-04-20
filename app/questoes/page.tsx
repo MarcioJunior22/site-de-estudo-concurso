@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
@@ -13,7 +13,7 @@ import { Progress } from "@/components/ui/progress";
 import { Badge } from "@/components/ui/badge";
 import { RotateCcw, CheckCircle2, XCircle, Target } from "lucide-react";
 
-export default function QuestoesPage() {
+function QuestoesContent() {
   const searchParams = useSearchParams();
   const cargoParam = searchParams.get("cargo");
   const disciplinaParam = searchParams.get("disciplina");
@@ -246,5 +246,13 @@ export default function QuestoesPage() {
       </main>
       <Footer />
     </div>
+  );
+}
+
+export default function QuestoesPage() {
+  return (
+    <Suspense fallback={<div className="min-h-screen flex items-center justify-center">Carregando...</div>}>
+      <QuestoesContent />
+    </Suspense>
   );
 }
